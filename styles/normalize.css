@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav {
+    background: black;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: yellow;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.course-work,
+.location,
+.certificate {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-buttons {
+    margin-bottom: 10px;
+}
+
+.filter-buttons button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background: #555;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course {
+    background: brown;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-toggle {
+        display: block;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
