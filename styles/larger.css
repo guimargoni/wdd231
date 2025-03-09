@@ -1,0 +1,12 @@
+@media (min-width: 1001px) {
+
+    #course-list button {
+        width: 15%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #course-list button {
+        width: 30%;
+    }
+}
